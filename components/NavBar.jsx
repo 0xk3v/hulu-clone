@@ -1,11 +1,12 @@
 import React from "react";
-import { Nav } from "../styles/navbar.styled";
+import { Nav, Button } from "../styles";
 
 function NavBar() {
   return (
     <Nav>
-      <h1>Home</h1>
-      <h1>another</h1>
+      <div className="nav-links">
+        <Button btnStyle="transparent">Log in</Button>
+      </div>
     </Nav>
   );
 }
