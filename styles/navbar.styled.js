@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "./device";
 
 export const Nav = styled.nav`
   width: 100%;
@@ -20,5 +21,11 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: flex-end;
     text-transform: uppercase;
+  }
+
+  @media ${device.tablet} {
+    .nav-links {
+      width: 80%;
+    }
   }
 `;

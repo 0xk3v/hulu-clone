@@ -1,14 +1,25 @@
 import styled from "styled-components";
+import { device } from "./device";
 
 const Plans = styled.div`
   width: 100%;
-  height: 120vh;
+  height: 150vh;
   background: ${({ theme }) => theme.colors.dark};
   color: ${({ theme }) => theme.colors._grey};
   margin-top: -22px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media ${device.tablet} {
+    height: 180vh;
+  }
+  @media ${device.mobileL} {
+    height: 300vh;
+  }
+  @media ${device.mobileM} {
+    height: 320vh;
+  }
 `;
 
 export const PlansContainer = styled.div`
@@ -34,6 +45,46 @@ export const PlansContainer = styled.div`
     p {
       font-size: 20px;
     }
+
+    @media ${device.tablet} {
+      width: 90%;
+      h4 {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    @media ${device.mobileL} {
+      width: 100%;
+      h4 {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+    @media ${device.mobileS} {
+      width: 100%;
+      h4 {
+        font-size: 10px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+  @media ${device.tablet} {
+    width: 90%;
   }
 `;
 
@@ -43,6 +94,15 @@ export const CardsContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  @media ${device.tablet} {
+    width: 90%;
+  }
+
+  @media ${device.mobileL} {
+    width: 100%;
+    flex-direction: column;
+  }
 `;
 
 export const CardsItem = styled.div`
@@ -93,6 +153,14 @@ export const CardsItem = styled.div`
       font-size: 16px;
       margin-bottom: 10px;
     }
+  }
+  @media ${device.tablet} {
+    width: 250px;
+    margin: 20px;
+  }
+  @media ${device.mobileL} {
+    width: 270px;
+    margin: 20px 0;
   }
 `;
 

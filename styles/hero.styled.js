@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { rgba } from "polished";
+import { device } from "./device";
 
 const Hero = styled.div`
   width: 100%;
@@ -16,6 +17,10 @@ const Hero = styled.div`
   text-align: center;
   position: relative;
   background-size: cover;
+
+  @media ${device.mobileL} {
+    height: 85vh;
+  }
 `;
 
 export const HeroContainer = styled.div`
@@ -59,6 +64,29 @@ export const HeroContainer = styled.div`
     font-size: 16px;
     color: ${({ theme }) => theme.colors.light};
   }
+
+  @media ${device.mobileL} {
+    .text-wrapper {
+      width: 95%;
+      h1 {
+        font-size: 18px;
+      }
+      img {
+        width: 60%;
+      }
+    }
+  }
+  // @media ${device.mobileS} {
+  //   .text-wrapper {
+  //     width: 100%;
+  //     h1 {
+  //       font-size: 10px;
+  //     }
+  //   }
+  //   img {
+  //     width: 90%;
+  //   }
+  // }
 `;
 
 export default Hero;
