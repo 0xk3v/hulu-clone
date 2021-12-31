@@ -1,18 +1,16 @@
 import React from "react";
-import styled from "styled-components";
-import NavBar from "../components/NavBar";
-
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`;
+import { HeroSection } from "../components";
+import PlansSection from "../components/PlansSection";
 
 const Home = () => {
   return (
     <>
-      <NavBar />
-      <Title>My page</Title>
-      <h1>anoter</h1>
+      <style jsx global>{`
+        @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+      `}</style>
+      <HeroSection />
+      <PlansSection />
     </>
   );
 };

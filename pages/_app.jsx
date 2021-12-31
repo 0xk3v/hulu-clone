@@ -1,23 +1,36 @@
 import React from "react";
+import App from "next/app";
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "../styles/global";
-import PropTypes from "prop-types";
 import { theme } from "../styles/themes";
 
-const App = ({ Component, pageProps }) => {
-  return (
-    <>
-      <GlobalStyle />
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </>
-  );
-};
+class MyApp extends App {
+  render() {
+    const { Component, pageProps } = this.props;
+    return (
+      <>
+        <GlobalStyle />
+        <ThemeProvider theme={theme}>
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </>
+    );
+  }
+}
 
-App.propTypes = {
-  Component: PropTypes.node.isRequired,
-  pageProps: PropTypes.node.isRequired,
-};
+//   return (
+//     <>
+//       <GlobalStyle />
+//       <ThemeProvider theme={theme}>
+//         <Component {...pageProps} />
+//       </ThemeProvider>
+//     </>
+//   );
+// };
 
-export default App;
+// App.propTypes = {
+//   Component: PropTypes.node.isRequired,
+//   pageProps: PropTypes.node.isRequired,
+// };
+
+export default MyApp;
