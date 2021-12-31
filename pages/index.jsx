@@ -1,6 +1,6 @@
 import React from "react";
-import { HeroSection } from "../components";
-import PlansSection from "../components/PlansSection";
+import Head from "next/head";
+import { HeroSection, PlansSection } from "../components";
 
 const Home = () => {
   return (
@@ -9,6 +9,9 @@ const Home = () => {
         @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
         @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
       `}</style>
+      <Head>
+        <title>Hulu Clone</title>
+      </Head>
       <HeroSection />
       <PlansSection />
     </>
