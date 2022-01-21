@@ -11,6 +11,7 @@ const Home = () => {
       `}</style>
       <Head>
         <title>Hulu Clone</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <HeroSection />
       <PlansSection />
