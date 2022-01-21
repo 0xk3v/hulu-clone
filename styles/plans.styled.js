@@ -15,10 +15,10 @@ const Plans = styled.div`
     height: 180vh;
   }
   @media ${device.mobileL} {
-    height: 300vh;
+    height: 240vh;
   }
   @media ${device.mobileM} {
-    height: 320vh;
+    height: 250vh;
   }
 `;
 
@@ -159,8 +159,8 @@ export const CardsItem = styled.div`
     margin: 20px;
   }
   @media ${device.mobileL} {
-    width: 270px;
-    margin: 20px 0;
+    width: 250px;
+    margin: 20px 0px;
   }
 `;
 
