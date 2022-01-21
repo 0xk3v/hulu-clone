@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { HeroSection, PlansSection } from "../components";
+import { BillboardSection, HeroSection, PlansSection } from "../components";
 
 const Home = () => {
   return (
@@ -15,6 +15,7 @@ const Home = () => {
       </Head>
       <HeroSection />
       <PlansSection />
+      <BillboardSection />
     </>
   );
 };

@@ -18,19 +18,4 @@ class MyApp extends App {
   }
 }
 
-//   return (
-//     <>
-//       <GlobalStyle />
-//       <ThemeProvider theme={theme}>
-//         <Component {...pageProps} />
-//       </ThemeProvider>
-//     </>
-//   );
-// };
-
-// App.propTypes = {
-//   Component: PropTypes.node.isRequired,
-//   pageProps: PropTypes.node.isRequired,
-// };
-
 export default MyApp;
