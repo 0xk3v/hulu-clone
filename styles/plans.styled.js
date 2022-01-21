@@ -15,7 +15,7 @@ const Plans = styled.div`
     height: 180vh;
   }
   @media ${device.mobileL} {
-    height: 240vh;
+    height: 260vh;
   }
   @media ${device.mobileM} {
     height: 250vh;
